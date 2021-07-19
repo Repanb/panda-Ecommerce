@@ -15,31 +15,31 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+                <div class="container mb-4">
                   <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                   <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-outline-info text-secondary" type="submit"><i class="fas fa-search"></i></button>
                   </form>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      <a class="nav-link" href="#">Shoes</a>
-                      <a class="nav-link" href="#">Backpack</a>
-                      <a class="nav-link" href="#">Subscribe</a>
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      <a class="nav-link" href="#shoes">Shoes</a>
+                      <a class="nav-link" href="#backpack">Backpack</a>
+                      <a class="nav-link" href="#subscribe">Subscribe</a>
                       
                     </div>
                   </div>
                 </div>
               </nav>
         </div>
-        <div class="container mt-5">
+        <div class="container mt-5" id="home">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner bg-primary">
+                <div class="carousel-inner bg-primary rounded">
                   <div class="carousel-item active">
                       <div class="row align-items-center">
                           <div class="col-lg-7 p-5">
@@ -92,9 +92,142 @@
         </div>
     </header>
     <main>
-        <div class="container">
-
+        <div class="container my-5" id="categories">
+            <div class="row g-5">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="p-3 border rounded-3 bg-warning d-flex justify-content-between align-items-center">
+                  <h1 class="text-white fs-1">Watch</h1>
+                  <img class="img-fluid" src="images/catagories/watch.png" alt="...">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="p-3 border rounded-3 bg-primary d-flex justify-content-between align-items-center">
+                  <h1 class="text-white fs-1">Bag</h1>
+                  <img class="img-fluid" src="images/catagories/bag.png" alt="...">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="p-3 border rounded-3 bg-success d-flex justify-content-between align-items-center">
+                  <h1 class="text-white fs-1">Shoes</h1>
+                  <img class="img-fluid" src="images/catagories/shoes.png" alt="...">
+                </div>
+              </div>
+            </div>
         </div>
+        <!--------------------
+           Shoes gallery 
+          -------------------->
+        <div class="container my-5" id="shoes">
+          <h2>Shoes</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 shadow m-2 border-0 p-3 bg-body rounded">
+                <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Supply 3</h5>
+                  <h6>$450</h6>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="m-3">
+                  <small class="btn btn-warning">Buy Now</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 shadow m-2 border-0 p-3 bg-body rounded">
+                <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike</h5>
+                  <h6>$550</h6>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="m-3">
+                  <small class="btn btn-warning">Buy Now</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 shadow m-2 border-0 p-3 bg-body rounded">
+                <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Red Air-Max</h5>
+                  <h6>$340</h6>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="m-3">
+                  <small class="btn btn-warning">Buy Now</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------
+           Backpack gallery 
+          ------------------->
+          <div class="container my-5" id="backpack">
+            <h2>Backpack</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow m-2 border-0 p-3 bg-body rounded">
+                  <img src="images/backpack/bag-1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Laltu Bag</h5>
+                    <h6>$220</h6>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="m-3">
+                    <small class="btn btn-warning">Buy Now</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow m-2 border-0 p-3 bg-body rounded">
+                  <img src="images/backpack/bag-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Niltu Bag</h5>
+                    <h6>$310</h6>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <div class="m-3">
+                    <small class="btn btn-warning">Buy Now</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow m-2 border-0 p-3 bg-body rounded">
+                  <img src="images/backpack/bag-3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Kaltu Bag</h5>
+                    <h6>$180</h6>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                  <div class="m-3">
+                    <small class="btn btn-warning">Buy Now</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--------------------
+               Subscribe 
+              --------------------->
+              <div class="container bg-info p-3 rounded-3 my-5" id="subscribe">
+                <div class="m-3 text-center">
+                  <h3>Get in Touch</h3>
+                  <p>Get updates on sales, specials price and more</p>
+                  <div class="d-flex justify-content-center">
+                    <div class="col-sm-10 d-flex justify-content-center">
+                      <input type="email" class="form-control w-75 me-3 mb-2" placeholder="your email" id="inputEmail">
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-warning px-4">Submit</button>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center bg-secondary pt-1 pb-1">
+                <p><small>&copy;2020. Panda Commerce. All right reserved. Repan, bangladesh</small></p>
+              </div>
     </main>
 
 
